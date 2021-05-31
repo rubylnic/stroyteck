@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Стройтек">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Отделка и ремонт нежилых помещений. Реконструкция зданий и сооружений. СТРОЙТЕК</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="img/bg.jpg" as="image">
+  <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__upper white-bg">
+      <div class="header__container container">
+        <div class="header__logo-container header-left">
+          <a class="header__logo" href="/">
+            <svg class="header__svg" width="135" height="48">
+            <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+          </svg>
+          </a>
+          <span>Успешно работаем и развиваемся с 2001 года</span></div>
+        <div class="header-right">
+          <div class="header__description header-right__item">
+            <div>Отделка и ремонт нежилых помещений</div>
+            <div>Реконструкция зданий и сооружений</div>
+          </div>
+          <a class="header__calc  header-right__item" href="calc.html" title="Калькулятор"><svg width="22" height="25">
+            <use xlink:href="img/sprite_auto.svg#icon-calc" width="22" height="25"></use>
+          </svg> Калькулятор</a>
+          <a class="header__tel  header-right__item" href="tel:+78124385525" title="+7 (812) 438-55-25"><svg width="25" height="25">
+            <use xlink:href="img/sprite_auto.svg#icon-phone" width="28" height="25"></use>
+          </svg> +7 (812) 438-55-25</a>
+          <button class="header__menu-button header-right__item header__burger" type="button"><svg class="header__svg" width="35" height="35">
+            <use xlink:href="img/sprite_auto.svg#icon-menu"></use>
+          </svg></button>
+          <button class="header__close header__close--closed header__menu-button" type="button" aria-label="Открыть меню">
+            <svg class="header__burger-img" width="35" height="35">
+              <use xlink:href="img/sprite_auto.svg#icon-close" width="28" height="25"></use>
+            </svg>
+          </button>
+
+        </div>
+      </div>
+    </div>
+    <nav class="header__lower black-bg nav nav--hidden">
+      <div class="container">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="about.html" class="header__link" title="О компании">О компании</a>
+          </li>
+          <li class="header__item">
+            <a href="do.html" class="header__link" title="Услуги">Услуги</a>
+          </li>
+          <li class="header__item">
+            <a href="works.html" class="header__link" title="Портфолио">Портфолио</a>
+          </li>
+          <li class="header__item">
+            <a href="reviews.html" class="header__link" title="Отзывы">Отзывы</a>
+          </li>
+          <li class="header__item">
+            <a href="contacts.html" class="header__link" title="Контакты">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="main-slider swiper-container">
+      <ul class="main-slider__list swiper-wrapper">
+        <li class="main-slider__item swiper-slide">
+          <div class="main-slider__info">
+            <div class="container">
+              <h3 class="main-slider__heading">Наши услуги</h3>
+              <a class="main-slider__button button" href="do.html">Посмотреть</a>
+            </div>
+          </div>
+          <img class="main-slider__img" src="img/slide-1.jpg" alt="Слайд">
+        </li>
+        <li class="main-slider__item swiper-slide">
+          <div class="main-slider__info">
+            <div class="container">
+              <h3 class="main-slider__heading">Какая-то информация</h3>
+              <p class="main-slider__text"> Какая-то информация Какая-то информация Какая-то информация Какая-то информация Какая-то информация</p>
+              <a class="main-slider__button button" href="#" title="Узнать больше">Узнать больше</a>
+            </div>
+          </div>
+          <img class="main-slider__img" src="img/slide-2.jpg" alt="Слайд">
+        </li>
+        <li class="main-slider__item swiper-slide">
+          <div class="main-slider__info">
+            <div class="container">
+              <h3 class="main-slider__heading">Какая-то информация</h3>
+              <p class="main-slider__text">Мы предоставляем своим заказчикам возможность передать все работы связанные с техническим перевооружением организации без отрыва собственных сотрудников от профильной деятельности и гарантированно получить оптимальное качественно-ценовое решение</p>
+              <a class="main-slider__button button" href="#" title="Узнать больше">Узнать больше</a>
+            </div>
+          </div>
+          <img class="main-slider__img" src="img/slide-3.jpg" alt="Слайд">
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </section>
+    <section class="types white-bg">
+      <h2 class="types__heading heading">Основные виды деятельности</h2>
+      <div class="swiper-container types__slider">
+        <ul class="types__list swiper-wrapper">
+          <li class="types__item swiper-slide">
+            <img class="types__img lazyload" src="img/1.jpg" data-srcset="img/1.jpg" srcset="img/spinner.svg" width="355" height="200" alt="">
+            <h3 class="types__sub-heading sub-heading">разработка дизайна и проектных решений</h3>
+          </li>
+          <li class="types__item swiper-slide">
+            <img class="types__img lazyload" src="img/2.jpg" data-srcset="img/2.jpg" srcset="img/spinner.svg" width="355" height="200" alt="">
+            <h3 class="types__sub-heading sub-heading">Отделочные работы</h3>
+          </li>
+          <li class="types__item swiper-slide">
+            <img class="types__img lazyload" src="img/3.jpg" data-srcset="img/3.jpg" srcset="img/spinner.svg" width="355" height="200" alt="">
+            <h3 class="types__sub-heading sub-heading">Генеральный подряд</h3>
+          </li>
+          <li class="types__item swiper-slide">
+            <img class="types__img lazyload" src="img/4.jpg" data-srcset="img/4.jpg" srcset="img/spinner.svg" width="355" height="200" alt="">
+            <h3 class="types__sub-heading sub-heading">Монтаж и ремонт инженерных систем</h3>
+          </li>
+          <li class="types__item swiper-slide">
+            <img class="types__img lazyload" src="img/5.jpg" data-srcset="img/5.jpg" srcset="img/spinner.svg" width="355" height="200" alt="">
+            <h3 class="types__sub-heading sub-heading">Общестроительные работы</h3>
+          </li>
+          <li class="types__item swiper-slide">
+            <img class="types__img lazyload" src="img/6.jpg" data-srcset="img/6.jpg" srcset="img/spinner.svg" width="355" height="200" alt="">
+            <h3 class="types__sub-heading sub-heading">Клининг</h3>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"><svg class="arrow-svg" width="36" height="36" viewBox="0 0 444 444"><defs></defs><path d="M336 210L131 5a17 17 0 00-24 24l193 193-193 192a17 17 0 0024 25l205-205c7-7 7-18 0-24z"></path></svg></div>
+        <div class="swiper-button-next"><svg class="arrow-svg" width="36" height="36" viewBox="0 0 444 444"><defs></defs><path d="M336 210L131 5a17 17 0 00-24 24l193 193-193 192a17 17 0 0024 25l205-205c7-7 7-18 0-24z"></path></svg></div>
+      </div>
+
+    </section>
+    <section class="features black-bg">
+      <div class="container">
+        <h2 class="features__heading heading">Наши преимущества</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="features__sub-heading sub-heading"><span>1</span>Гарантия на работы от 1 до 3 лет </h3>
+            <p class="features__info">В зависимости от материалов и видов работ</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__sub-heading sub-heading"><span>2</span>Соблюдение сроков</h3>
+            <p class="features__info">Мы готовы возместить до 1% от сметы за каждый день просрочки</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__sub-heading sub-heading"><span>3</span>Работы в сложных условиях</h3>
+            <div class="features__info">
+              <ul class="features__sub-list">
+                <li class="features__sub-item">В застроенной части города</li>
+                <li class="features__sub-item">В тёмное время суток</li>
+                <li class="features__sub-item">В стеснённых условиях (местах большого скопления людей и механизмов (действующие предприятия))</li>
+                <li class="features__sub-item">В автономном режиме, вдали от инфраструктуры</li>
+                <li class="features__sub-item">Выполняем большие объемы работ</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="team white-bg skew-bg">
+      <div class="container">
+        <h2 class="team__heading heading">Наши сотрудники</h2>
+        <ul class="team__list">
+          <li class="team__item">
+            <img class="team__img" width="226" height="426" src="img/1-b.jpg" alt="Фото генерального директора">
+            <div class="team__container">
+              <h3 class="team__mate team__info">Иванов Александр Юрьевич<span>Генеральный директор</span></h3>
+              <p class="team__info"><span class="bold-text">Окончил</span> Военный инженерный технический Университет (г.СПб) </p>
+              <p class="team__info"><span class="bold-text">20 лет</span> Профессиональный опыт в сфере строительства и ремонта</p>
+            </div>
+          </li>
+          <li class="team__item">
+            <img class="team__img" width="226" height="426" src="img/2-b.jpg" alt="Фото заместителя генерального директора">
+            <div class="team__container">
+              <h3 class="team__mate team__info">Скоморохов Николай Михайлович<span>Заместитель генерального директора</span></h3>
+              <p class="team__info"><span class="bold-text">Окончил</span> Высшее командное военное топографическое училище (г.СПб)</p>
+              <p class="team__info"><span class="bold-text">18 лет</span> Профессиональный опыт в сфере строительства и ремонта</p>
+            </div>
+
+          </li>
+          <li class="team__item">
+            <img class="team__img" width="226" height="426" src="img/3-b.jpg" alt="Фото заместителя директора по развитию">
+            <div class="team__container">
+              <h3 class="team__mate team__info">Костриков Георгий Викторович<span>Заместитель директора по развитию</span></h3>
+              <p class="team__info"><span class="bold-text">Окончил</span> Ленинградский электро-технический институт</p>
+              <p class="team__info"><span class="bold-text">21 год</span> Профессиональный опыт в сфере строительства и ремонта</p>
+            </div>
+
+          </li>
+        </ul>
+        <p class="team__description description">Все сотрудники, в том числе и рабочие, имеют квалификационные аттестаты, дипломы и свидетельства об окончании соответсвующих курсов</p>
+      </div>
+    </section>
+    <section class="clients black-bg skew-bg">
+      <h2 class="clients__heading heading">Среди наших клиентов</h2>
+      <div class="clients__container">
+        <ul class="clients__list container">
+          <li class="clients__item">
+            <img class="clients__img lazyload" src="img/p1.png" data-srcset="img/p1.png" srcset="img/spinner.svg" alt="Фото Azimut Hotels" width="180" height="134">
+          </li>
+          <li class="clients__item">
+            <img class="clients__img lazyload" src="img/p2.png" data-srcset="img/p2.png" srcset="img/spinner.svg" alt="Фото Deichmann" width="180" height="77">
+          </li>
+          <li class="clients__item">
+            <img class="clients__img lazyload" src="img/p3.png" data-srcset="img/p3.png" srcset="img/spinner.svg" alt="Фото Банк Санкт-Петербург" width="180" height="61">
+          </li>
+          <li class="clients__item">
+            <img class="clients__img lazyload" src="img/p4.png" data-srcset="img/p4.png" srcset="img/spinner.svg" alt="Фото ВТБ" width="180" height="134">
+          </li>
+          <li class="clients__item">
+            <img class="clients__img lazyload" src="img/p5.png" data-srcset="img/p5.png" srcset="img/spinner.svg" alt="Фото ЛСР" width="180" height="134">
+          </li>
+
+          <li class="clients__item">
+            <img class="clients__img lazyload" src="img/p6.png" data-srcset="img/p6.png" srcset="img/spinner.svg" alt="Фото Lahta Plaza" width="180" height="134">
+          </li>
+          <li class="clients__item">
+            <img class="clients__img lazyload" src="img/p7.png" data-srcset="img/p7.png" srcset="img/spinner.svg" alt="Фото Консул" width="180" height="134">
+          </li>
+          <li class="clients__item">
+            <img class="clients__img lazyload" src="img/p8.png" data-srcset="img/p8.png" srcset="img/spinner.svg" alt="Фото Эльдорадо" width="180" height="134">
+          </li>
+          <li class="clients__item">
+            <img class="clients__img lazyload" src="img/p9.png" data-srcset="img/p9.png" srcset="img/spinner.svg" alt="Фото Синема Парк" width="180" height="134">
+          </li>
+          <li class="clients__item">
+            <img class="clients__img lazyload" src="img/p10.png" data-srcset="img/p10.png" srcset="img/spinner.svg" alt="Фото Carl's Jr" width="180" height="134">
+          </li>
+          <li class="clients__item">
+            <img class="clients__img lazyload" src="img/p11.png" data-srcset="img/p11.png" srcset="img/spinner.svg" alt="Фото Kellermann Group" width="180" height="134">
+          </li>
+          <li class="clients__item">
+            <img class="clients__img lazyload" src="img/p12.png" data-srcset="img/p12.png" srcset="img/spinner.svg" alt="Фото БЦ Седова 13" width="180" height="134">
+          </li>
+          <li class="clients__item">
+            <img class="clients__img lazyload" src="img/p13.png" data-srcset="img/p13.png" srcset="img/spinner.svg" alt="Фото РЖД" width="180" height="134">
+          </li>
+          <li class="clients__item">
+            <img class="clients__img lazyload" src="img/p15.png" data-srcset="img/p15.png" srcset="img/spinner.svg" alt="Фото YIT" width="180" height="134">
+          </li>
+          <li class="clients__item clients__item--square">
+            <img class="clients__img lazyload" src="img/p14.png" data-srcset="img/p14.png" srcset="img/spinner.svg" alt="Фото Васаби" width="150" height="146">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="how black-bg skew-bg">
+      <div class="container">
+        <h2 class="how__heading heading">Как мы работаем</h2>
+        <ul class="how__list">
+          <li class="how__item">
+            <div class="how__icon">
+              <span>1.</span>
+              <svg class="how__svg" width="45" height="56">
+                <use xlink:href="img/sprite_auto.svg#icon-h1"></use>
+              </svg>
+            </div>
+            <div class="how__description">Оставьте заявку на нашем сайте или позвоните нам</div>
+          </li>
+          <li class="how__item">
+            <div class="how__icon">
+              <span>2.</span>
+              <svg class="how__svg" width="45" height="56">
+                <use xlink:href="img/sprite_auto.svg#icon-h2"></use>
+              </svg>
+            </div>
+            <div class="how__description">Выезд нашего специалиста для выяснения деталей и замера</div>
+          </li>
+          <li class="how__item">
+            <div class="how__icon">
+              <span>3.</span>
+              <svg class="how__svg" width="45" height="56">
+                <use xlink:href="img/sprite_auto.svg#icon-h3"></use>
+              </svg>
+            </div>
+            <div class="how__description">Составление сметы, согласование условий выполнения работ</div>
+          </li>
+          <li class="how__item">
+            <div class="how__icon">
+              <span>4.</span>
+              <svg class="how__svg" width="45" height="56">
+                <use xlink:href="img/sprite_auto.svg#icon-h4"></use>
+              </svg>
+            </div>
+            <div class="how__description">Подписание договора, оплата материалов</div>
+          </li>
+          <li class="how__item">
+            <div class="how__icon">
+              <span>5.</span>
+              <svg class="how__svg" width="45" height="56">
+                <use xlink:href="img/sprite_auto.svg#icon-h5"></use>
+              </svg>
+            </div>
+            <div class="how__description">Передача помещения</div>
+          </li>
+          <li class="how__item">
+            <div class="how__icon">
+              <span>6.</span>
+              <svg class="how__svg" width="45" height="56">
+                <use xlink:href="img/sprite_auto.svg#icon-h6"></use>
+              </svg>
+            </div>
+            <div class="how__description">Ремонт, еженедельные отчеты</div>
+          </li>
+          <li class="how__item">
+            <div class="how__icon">
+              <span>7.</span>
+              <svg class="how__svg" width="45" height="56">
+                <use xlink:href="img/sprite_auto.svg#icon-h7"></use>
+              </svg>
+            </div>
+            <div class="how__description">Сдача объекта, подписание акта</div>
+          </li>
+          <li class="how__item">
+            <div class="how__icon">
+              <span>8.</span>
+              <svg class="how__svg" width="45" height="56">
+                <use xlink:href="img/sprite_auto.svg#icon-h8"></use>
+              </svg>
+            </div>
+            <div class="how__description">Оплата работ по договору</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="callback white-bg skew-bg">
+      <div class="container">
+        <h2 class="callback__heading heading">Мы свяжемся с Вами в течении 30 минут!</h2>
+        <div class="form-wrapper">
+          <form class="form">
+            <input class="form__input" type="text" name="name" required="" placeholder="Введите ваше имя">
+            <input class="form__input tel" type="tel" name="phone" placeholder="Введите ваш номер телефона">
+            <label class="form__label" for="cnt_check">
+              <input type="checkbox" checked="" id="cnt_check">
+              Согласен на обработку своих персональных данных</label>
+            <button class="form__button button"><span>Перезвоните мне</span></button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="contacts black-bg skew-bg">
+      <div class="container">
+        <h2 class="contacts__heading heading">Контакты</h2>
+        <div class="contacts__container">
+          <ul class="contacts__list">
+            <li class="contacts__item"><svg class="contacts__svg" width="45" height="56">
+              <use xlink:href="img/sprite_auto.svg#icon-map"></use>
+            </svg>Адрес: 191124 Санкт-Петербург, Смольный пр. 7</li>
+            <li class="contacts__item contacts__tel">
+              <svg class="contacts__svg" width="45" height="56">
+                <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+              </svg>
+              <a class="contacts__link" href="tel:+78124385525" title="+7 (812) 438-55-25">+7 (812) 438-55-25</a>
+              <a class="contacts__link" href="tel:+79219158819" title="+7 (921) 915-88-19">+7 (921) 915-88-19</a>
+            </li>
+
+            <li class="contacts__item"><svg class="contacts__svg" width="45" height="56">
+              <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
+            </svg><a class="contacts__link" href="mailto:9158819@mail.ru" title="9158819@mail.ru">9158819@mail.ru</a></li>
+            <li class="contacts__item"><svg class="contacts__svg" width="45" height="56">
+              <use xlink:href="img/sprite_auto.svg#icon-world"></use>
+            </svg><a class="contacts__link" href="http://lp.stroytec.com/main.html" title="lp.stroytec.com">lp.stroytec.com</a></li>
+          </ul>
+          <div class="yandex-map">
+            <div data-map="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__logo-container white-bg">
+      <div class="footer__container">
+      <a class="footer__logo" href="/">
+        <svg class="header__svg" width="135" height="48">
+        <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+      </svg>
+      </a>
+      <span class="footer__info">Успешно работаем и развиваемся с 2001 года</span>
+      <a class="footer__tel" href="tel:+78124385525" title="+7 (812) 438-55-25"><svg width="25" height="25">
+        <use xlink:href="img/sprite_auto.svg#icon-phone" width="28" height="25"></use>
+      </svg> +7 (812) 438-55-25</a>
+      </div>
+    </div>
+    <div class="footer__links-container">
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a class="footer__link" href="about.html" title="О компании">О компании</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="do.html" title="Услуги">Услуги</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="works.html" title="Портфолио">Портфолио</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="reviews.html" title="Отзывы">Отзывы</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="contacts.html" title="Контакты">Контакты</a>
+      </li>
+    </ul>
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a class="footer__link" href="#" title="Ремонт офисов">Ремонт офисов</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#" title="Ремонт гостиниц">Ремонт гостиниц</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#" title="Ремонт магазинов">Ремонт магазинов и торговых площадей</a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#" title="Ремонт кафе">Ремонт кафе</a>
+      </li>
+    </ul>
+    </div>
+  </footer>
+  <script src="js/vendors.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

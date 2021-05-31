@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Стройтек">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Отделка и ремонт нежилых помещений. Реконструкция зданий и сооружений. СТРОЙТЕК</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="img/bg.jpg" as="image">
+  <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__upper white-bg">
+      <div class="header__container container">
+        <div class="header__logo-container header-left">
+          <a class="header__logo" href="/">
+            <svg class="header__svg" width="135" height="48">
+            <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+          </svg>
+          </a>
+          <span>Успешно работаем и развиваемся с 2001 года</span></div>
+        <div class="header-right">
+          <div class="header__description header-right__item">
+            <div>Отделка и ремонт нежилых помещений</div>
+            <div>Реконструкция зданий и сооружений</div>
+          </div>
+          <a class="header__calc  header-right__item" href="calc.html" title="Калькулятор"><svg width="22" height="25">
+            <use xlink:href="img/sprite_auto.svg#icon-calc" width="22" height="25"></use>
+          </svg> Калькулятор</a>
+          <a class="header__tel  header-right__item" href="tel:+78124385525" title="+7 (812) 438-55-25"><svg width="25" height="25">
+            <use xlink:href="img/sprite_auto.svg#icon-phone" width="28" height="25"></use>
+          </svg> +7 (812) 438-55-25</a>
+          <button class="header__menu-button header-right__item header__burger" type="button"><svg class="header__svg" width="35" height="35">
+            <use xlink:href="img/sprite_auto.svg#icon-menu"></use>
+          </svg></button>
+          <button class="header__close header__close--closed header__menu-button" type="button" aria-label="Открыть меню">
+            <svg class="header__burger-img" width="35" height="35">
+              <use xlink:href="img/sprite_auto.svg#icon-close" width="28" height="25"></use>
+            </svg>
+          </button>
+
+        </div>
+      </div>
+    </div>
+    <nav class="header__lower black-bg nav nav--hidden">
+      <div class="container">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="about.html" class="header__link" title="О компании">О компании</a>
+          </li>
+          <li class="header__item">
+            <a href="do.html" class="header__link" title="Услуги">Услуги</a>
+          </li>
+          <li class="header__item">
+            <a href="works.html" class="header__link" title="Портфолио">Портфолио</a>
+          </li>
+          <li class="header__item">
+            <a href="reviews.html" class="header__link" title="Отзывы">Отзывы</a>
+          </li>
+          <li class="header__item">
+            <a href="contacts.html" class="header__link" title="Контакты">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="calc white-bg">
+      <div class="container">
+        <h2 class="calc__heading heading">Калькулятор</h2>
+        <div class="calc__containers">
+          <div class="calc__container">
+            <h3 class="calc__sub-heading">Примерный расчет стоимости ремонта</h3>
+
+            <form class="calc__form" name="calc">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="c1">Площадь помещения</td>
+                    <td class="c2"><input type="text" name="area" onchange="calculate()"></td>
+                  </tr>
+                  <tr>
+                    <td class="c1">Тип дома</td>
+                    <td class="c2">
+                      <select name="tipdoma" onchange="calculate()">
+                        <option value="1.0">панельный</option>
+                        <option value="1.5">сталинский</option>
+                        <option value="1.2">кирпичный</option>
+                        <option value="1.3">монолитно-кирпичный</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="c1">Помещение находится в</td>
+                    <td class="c2">
+                      <select name="vozrastdoma" onchange="calculate()">
+                        <option value="0.9">новостройке</option>
+                        <option value="1.0">старом доме</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td class="c1">Уровень ремонта*</td>
+                    <td class="c2">
+                      <select name="remontclass" onchange="calculate()">
+                        <option value="20">косметический</option>
+                        <option value="35">эконом</option>
+                        <option value="50">комфорт</option>
+                        <option value="150">люкс</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="c1">Перепланировка</td>
+                    <td class="c2">
+                      <select name="pereplan" onchange="calculate()">
+                        <option value="1.0">нет</option>
+                        <option value="1.3">частичная</option>
+                        <option value="1.6">полная</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="c1">Количество с/у для ремонта</td>
+                    <td class="c2">
+                      <select name="sanuzly" onchange="calculate()">
+                        <option value="1000">1</option>
+                        <option value="2000">2</option>
+                        <option value="0">нет</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="c1"></td>
+                    <td class="c2"><button class="button calc__button" type="button" onclick="calculate();return false;">Расчитать</button></td>
+                  </tr>
+                  <tr class="calc__final">
+                    <td class="c1">Ориентировочная стоимость ремонта (в Евро)</td>
+                    <td class="c2"><input type="text" name="price" value=""></td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
+
+          <div class="calc__container">
+
+            <h3 class="calc__sub-heading">* Уровни ремонта</h3>
+            <ol class="calc__list">
+              <li class="calc__item"><span class="bold-text">«КОСМЕТИЧЕСКИЙ»</span> – включает в себя в основном малярные работы (шпаклевка, покраска, поклейка обоев) без существенной подготовки поверхностей.</li>
+              <li class="calc__item"><span class="bold-text">«ЭКОНОМ»</span> – включает в себя минимальный набор ремонтно-отделочных работ с применением не дорогих отделочных материалов. Экономия достигается за счет:
+                <ul class="calc__sub-list">
+                  <li>Сокращения подготовительных работ по согласованию с Заказчиком.</li>
+                  <li>Применение отечественных отделочных материалов.</li>
+                </ul>
+              </li>
+              <li class="calc__item"><span class="bold-text">«КОМФОРТ»</span> – включает в себя полный комплекс строительно-отделочных работ, выполненных с соблюдением строительных норм и стандартов, с применением не дорогих отделочных материалов.</li>
+              <li class="calc__item"><span class="bold-text">«ЛЮКС»</span> – включает в себя полный комплекс строительно-отделочных работ, выполненных с соблюдением строительных норм и стандартов, применение дорогих строительно-отделочных материалов, существенный уровень проработки
+                дизайн -проекта со сложными эксклюзивными элементами.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <script>
+    function calculate() {
+      var area = document.forms['calc'].elements['area'].value;
+
+      var tipdomaO = document.forms['calc'].elements['tipdoma'];
+      var tipdoma = parseFloat(tipdomaO.options[tipdomaO.selectedIndex].value);
+
+      var vozrastdomaO = document.forms['calc'].elements['vozrastdoma'];
+      var vozrastdoma = parseFloat(vozrastdomaO.options[vozrastdomaO.selectedIndex].value);
+
+      var remontclassO = document.forms['calc'].elements['remontclass'];
+      var remontclass = parseFloat(remontclassO.options[remontclassO.selectedIndex].value);
+
+      var pereplanO = document.forms['calc'].elements['pereplan'];
+      var pereplan = parseFloat(pereplanO.options[pereplanO.selectedIndex].value);
+
+      var sanuzlyO = document.forms['calc'].elements['sanuzly'];
+      var sanuzly = parseFloat(sanuzlyO.options[sanuzlyO.selectedIndex].value);
+
+      document.forms['calc'].elements['price'].value =
+        (sanuzly + area * tipdoma * vozrastdoma * remontclass * pereplan);
+    }
+  </script>
+  <script src="js/vendors.js"></script>
+  <script type="text/javascript">
+    lightGallery(document.getElementById('lightgallery'));
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
